@@ -17,6 +17,14 @@ const Desc = styled.div`
     text-align: center;
     font-style: italic;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 1);
+
+    @media only screen and (max-width: 768px) {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
 `;
 
 const WebDesign = () => {
@@ -29,7 +37,7 @@ const WebDesign = () => {
                 <OrbitControls enableZoom={false} autoRotate />
             </Canvas>
             <Desc>
-                We design products with a strong focus on both world class design and 
+                We design products with a strong focus on both world class design and
                 ensuring your product is a market success.
             </Desc>
         </>
